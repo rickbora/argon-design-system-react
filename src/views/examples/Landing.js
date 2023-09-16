@@ -74,35 +74,13 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        Smart Clinic
+                        Smart Clinic অসম
                         {/* <span>completed with examples</span> */}
                       </h1>
                       <p className="lead text-white">
                         Smart Clinic cloud solution powered by Bahmni and AMBD
                         (Ayushman Bharat Digital Health Mission) compliant
                       </p>
-                      <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          {/* <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span> */}
-                          <span className="btn-inner--text">Check Demo</span>
-                        </Button>
-                        {/* <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">Contact Us</span>
-                        </Button> */}
-                      </div>
                     </Col>
                   </Row>
                 </div>
@@ -243,13 +221,38 @@ class Landing extends React.Component {
                           points="0,42 583,95 683,0 0,95"
                         />
                       </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
+                      {/* <h4 className="display-3 font-weight-bold text-white">
                         Vision
-                      </h4>
-                      <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                      </h4> */}
+                      <div className="btn-wrapper">
+                        <Button
+                          className="btn-icon mb-3 mb-sm-0"
+                          color="info"
+                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
+                        >
+                          {/* <span className="btn-inner--icon mr-1">
+                            <i className="fa fa-code" />
+                          </span> */}
+                          <span className="btn-inner--text">Check Demo</span>
+                        </Button>
+                        <br /> <br />
+                        {/* <Button
+                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+                          color="default"
+                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                        >
+                          <span className="btn-inner--icon mr-1">
+                            <i className="ni ni-cloud-download-95" />
+                          </span>
+                          <span className="btn-inner--text">Contact Us</span>
+                        </Button> */}
+                      </div>
+                      <p>
+                        Bahmni EMR Creds
+                        <br />
+                        User : superman {'  '}Password: Admin123 <br /> Creater
+                        Creds (Billing) <br />
+                        User: superman@bahmni.org {'  '}Password: Crater123
                       </p>
                     </blockquote>
                   </Card>
@@ -269,26 +272,25 @@ class Landing extends React.Component {
                     <br />
                     <h3>What we offer</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                      We offer Integrated customised hosting options for an an
+                      easy-to-use e-medical record (EMR), Billing Software &
+                      Reporting, that is powered by Bahmni.
                     </p>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      The solution comes pre-loaded with the CIEL dictionary
+                      (Columbia International eHealth Laboratory) containing
+                      50,000+ medical terms with SNOMED, LOINC and ICD-10
+                      mappings, forms, India Essential Drug List and Reports,
+                      thus enabling you to be digitally operational in a matter
+                      of hours{' '}
                     </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
+                    <p></p>
                     <a
                       className="font-weight-bold text-warning mt-5"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      A beautiful UI Kit for impactful websites
+                      Read more
                     </a>
                   </div>
                 </Col>
@@ -336,7 +338,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Smart Patient Registration
+                                e-medical records
                               </h6>
                             </div>
                           </div>
@@ -462,186 +464,17 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 className="display-3">What will it cost you ?</h2>
+                  <h2 className="display-3">What is ABDM compliance ?</h2>
                   <p className="lead text-muted">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record maximum.
+                    The Ayushman Bharat Digital Mission (ABDM) from the
+                    Government of India is developing a health infrastructure
+                    and coverting your clinic to a smart clinic is simple step
+                    that empowers you to join the ABDM ecosystem and be part of
+                    the healthcare digital transformation in India! Using the
+                    Integrated Solution will transform to patients
                   </p>
                 </Col>
               </Row>
-              {/* <Row>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require('assets/img/theme/team-1-800x800.jpg')}
-                      style={{ width: '200px' }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Ryan Tompson</span>
-                        <small className="h6 text-muted">Web Developer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require('assets/img/theme/team-2-800x800.jpg')}
-                      style={{ width: '200px' }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Romina Hadid</span>
-                        <small className="h6 text-muted">
-                          Marketing Strategist
-                        </small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="primary"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="primary"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require('assets/img/theme/team-3-800x800.jpg')}
-                      style={{ width: '200px' }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">Alexander Smith</span>
-                        <small className="h6 text-muted">UI/UX Designer</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="info"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="info"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                  <div className="px-4">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require('assets/img/theme/team-4-800x800.jpg')}
-                      style={{ width: '200px' }}
-                    />
-                    <div className="pt-4 text-center">
-                      <h5 className="title">
-                        <span className="d-block mb-1">John Doe</span>
-                        <small className="h6 text-muted">Founder and CEO</small>
-                      </h5>
-                      <div className="mt-3">
-                        <Button
-                          className="btn-icon-only rounded-circle"
-                          color="success"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-twitter" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-facebook" />
-                        </Button>
-                        <Button
-                          className="btn-icon-only rounded-circle ml-1"
-                          color="success"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i className="fa fa-dribbble" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row> */}
             </Container>
           </section>
 
@@ -650,7 +483,7 @@ class Landing extends React.Component {
               <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 className="display-3 text-white">
-                    Interested in trying us out ?
+                    EARLY ADOPTION PROGRAM
                   </h2>
                   <p className="lead text-white">
                     If you are small clinic in search of an EMR / billing
@@ -659,7 +492,7 @@ class Landing extends React.Component {
                   </p>
                 </Col>
               </Row>
-              <Row className="row-grid mt-5">
+              {/* <Row className="row-grid mt-5">
                 <Col lg="4">
                   <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                     <i className="ni ni-settings text-primary" />
@@ -690,7 +523,7 @@ class Landing extends React.Component {
                     up the bulk of the card's content.
                   </p>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew zindex-100">
@@ -715,10 +548,10 @@ class Landing extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 className="mb-1">Want to work with us?</h4>
-                      <p className="mt-0">
+                      <h4 className="mb-1">Contact Us</h4>
+                      {/* <p className="mt-0">
                         Your project is very important to us.
-                      </p>
+                      </p> */}
                       <FormGroup
                         className={classnames('mt-5', {
                           focused: this.state.nameFocused,
