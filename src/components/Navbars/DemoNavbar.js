@@ -77,7 +77,7 @@ class DemoNavbar extends React.Component {
                   alt="..."
                   src={require('assets/img/brand/argon-react-white.png')}
                 /> */}
-                AmiCare Solutions
+                Augment Health
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
