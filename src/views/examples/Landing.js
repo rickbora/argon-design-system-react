@@ -224,7 +224,7 @@ class Landing extends React.Component {
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
+                          href="#"
                         >
                           {/* <span className="btn-inner--icon mr-1">
                             <i className="fa fa-code" />
@@ -334,7 +334,41 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                e-medical records
+                                ABHA-ID Compliant patient registration
+                              </h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-settings-gear-65" />
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0 text-white">
+                                Generate / Mantain EMR
+                              </h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-settings-gear-65" />
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0 text-white">
+                                Apointment Scheduling
                               </h6>
                             </div>
                           </div>
@@ -351,7 +385,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Pre-Configured
+                                Integrated Smart Billing
                               </h6>
                             </div>
                           </div>
@@ -466,8 +500,14 @@ class Landing extends React.Component {
                     Government of India is developing a health infrastructure
                     and coverting your clinic to a smart clinic is simple step
                     that empowers you to join the ABDM ecosystem and be part of
-                    the healthcare digital transformation in India! Using the
-                    Integrated Solution will transform to patients
+                    the healthcare digital transformation in India.{' '}
+                    <a
+                      className="font-weight-bold text-warning mt-5"
+                      href="https://abdm.gov.in/"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      Read more
+                    </a>
                   </p>
                 </Col>
               </Row>
@@ -483,8 +523,10 @@ class Landing extends React.Component {
                   </h2>
                   <p className="lead text-white">
                     If you are small clinic in search of an EMR / billing
-                    platform to manage your clinics, we are a right fit. Get in
-                    touch and we can guide on how to setup up your smart clinic.
+                    platform, we are a right fit. Get in touch and we can guide
+                    you on how to setup up your smart clinic. As an early
+                    adopter you will be onboarded for 0 cost and you will be
+                    never charged for basic features built on Open Source.
                   </p>
                 </Col>
               </Row>
