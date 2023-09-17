@@ -83,7 +83,7 @@ class DemoNavbar extends React.Component {
                 onExiting={this.onExiting}
                 onExited={this.onExited}
               >
-                <div className="navbar-collapse-header">
+                {/* <div className="navbar-collapse-header">
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
@@ -100,7 +100,7 @@ class DemoNavbar extends React.Component {
                       </button>
                     </Col>
                   </Row>
-                </div>
+                </div> */}
                 {/* <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
