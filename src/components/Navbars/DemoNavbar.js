@@ -28,8 +28,8 @@ import {
   NavLink,
   Nav,
   Container,
-  Row,
-  Col,
+  // Row,
+  // Col,
   UncontrolledTooltip,
 } from 'reactstrap';
 

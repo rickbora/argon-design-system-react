@@ -22,15 +22,15 @@ import classnames from 'classnames';
 // reactstrap components
 import {
   Badge,
-  Button,
+  // Button,
   Card,
-  CardBody,
+  // CardBody,
   CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  // FormGroup,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
   Container,
   Row,
   Col,
@@ -564,9 +564,8 @@ class Landing extends React.Component {
                     Ready for transformation ?
                   </h2>
                   <p className="lead text-white">
-                    Your organization's transformation
-                    is not just a step; it's a powerful leap into the forefront
-                    of healthcare innovation.
+                    Your organization's transformation is not just a step; it's
+                    a powerful leap into the forefront of healthcare innovation.
                   </p>
                 </Col>
               </Row>
