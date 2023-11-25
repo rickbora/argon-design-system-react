@@ -221,6 +221,36 @@ class Landing extends React.Component {
                       {/* <h4 className="display-3 font-weight-bold text-white">
                         Vision
                       </h4> */}
+                      <div className="btn-wrapper">
+                        <Button
+                          className="btn-icon mb-3 mb-sm-0"
+                          color="info"
+                          href="#"
+                        >
+                          {/* <span className="btn-inner--icon mr-1">
+                            <i className="fa fa-code" />
+                          </span> */}
+                          <span className="btn-inner--text">Check Demo</span>
+                        </Button>
+                        <br /> <br />
+                        {/* <Button
+                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+                          color="default"
+                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                        >
+                          <span className="btn-inner--icon mr-1">
+                            <i className="ni ni-cloud-download-95" />
+                          </span>
+                          <span className="btn-inner--text">Contact Us</span>
+                        </Button> */}
+                      </div>
+                      <p>
+                        Bahmni EMR Creds
+                        <br />
+                        User : superman {'  '}Password: Admin123 <br /> Creater
+                        Creds (Billing) <br />
+                        User: superman@bahmni.org {'  '}Password: Crater123
+                      </p>
                     </blockquote>
                   </Card>
                 </Col>
@@ -237,108 +267,29 @@ class Landing extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <h3>Trusted Ally in Healtcare IT</h3>
+                    <h3>What we offer</h3>
                     <p className="lead">
-                      Welcome to Amicure. As your trusted ally, we stand at the
-                      forefront of the intersection between healthcare and
-                      cutting-edge IT, offering a steadfast partnership that
-                      ensures your organization's success.
+                      We offer Integrated customised hosting options for an an
+                      easy-to-use e-medical record (EMR), Billing Software &
+                      Reporting, that is powered by Bahmni.
+                    </p>
+                    <p>
+                      The solution comes pre-loaded with the CIEL dictionary
+                      (Columbia International eHealth Laboratory) containing
+                      50,000+ medical terms with SNOMED, LOINC and ICD-10
+                      mappings, forms, India Essential Drug List and Reports,
+                      thus enabling you to be digitally operational in a matter
+                      of hours{' '}
                     </p>
                     <p></p>
-                    <p></p>
-                    {/* <a
+                    <a
                       className="font-weight-bold text-warning mt-5"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
                       Read more
-                    </a> */}
+                    </a>
                   </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
-            <Container className="pt-lg pb-300">
-              <Row className="text-center justify-content-center">
-                <Col lg="10">
-                  <h2 className="display-3 text-white">Why choose us ?</h2>
-                  <p className="lead text-white">
-                    At Amicure, we understand that navigating the complex
-                    landscape of healthcare requires expertise, innovation, and
-                    a deep commitment to positive outcomes. Here's why we stand
-                    out:
-                  </p>
-                </Col>
-              </Row>
-              <Row className="row-grid mt-5">
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-settings text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Tailored Solutions</h5>
-                  <p className="text-white mt-3">
-                    Recognizing that each healthcare organization is unique, we
-                    don't believe in one-size-fits-all solutions. Our
-                    consultants work closely with clients to develop customized
-                    strategies that address their specific challenges and goals.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-ruler-pencil text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Client Centric</h5>
-                  <p className="text-white mt-3">
-                    Our clients are at the heart of everything we do. We believe
-                    in fostering strong, collaborative relationships to truly
-                    understand our clients' needs and exceed their expectations.
-                    Your success is our success.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Location Edge</h5>
-                  <p className="text-white mt-3">
-                    Nestled in the heart of Assam, within the dynamic pulse of
-                    Guwahati, Amicure proudly stands as your local beacon for
-                    healthcare excellence. Our fusion of global expertise with a
-                    profound understanding of local nuances makes us the prime
-                    choice for your healthcare needs.
-                  </p>
-                </Col>
-              </Row>
-            </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
-            </div>
-          </section>
-          <section className="section section-lg">
-            <Container>
-              <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
-                  <p className="lead text-muted">
-                    At Amicure, we are not just a consultancy; we are your
-                    strategic partner in navigating the complexities of
-                    healthcare technology. Let us empower your organization to
-                    thrive in the digital era.{' '}
-                    <b>Together, we can build a healthier future.</b>
-                  </p>
                 </Col>
               </Row>
             </Container>
@@ -363,10 +314,14 @@ class Landing extends React.Component {
                       </div>
                     </div>
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Our Services</h4>
-                      {/* <p className="text-white">
-                        Our Comprehensive Services Include
-                      </p> */}
+                      <h4 className="display-3 text-white">
+                        Integrated Solution
+                      </h4>
+                      <p className="text-white">
+                        Powered by Bahmni to intergrate with OpenMRS and Crater.
+                        Backed by a huge community support rooting for your
+                        success.
+                      </p>
                       <ul className="list-unstyled mt-5">
                         <li className="py-2">
                           <div className="d-flex align-items-center">
@@ -380,8 +335,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Implempentation of customized Bahmni Enterprise
-                                solutions for small and large hospitals
+                                ABHA-ID Compliant patient registration
                               </h6>
                             </div>
                           </div>
@@ -398,8 +352,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                ABDM (Ayushman Bharat Digital Mission) compliant
-                                smart clinics using customized Bahmni Lite.
+                                Generate / Mantain EMR
                               </h6>
                             </div>
                           </div>
@@ -416,8 +369,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Smart Labs with integrated open ERP billing
-                                solutions
+                                Apointment Scheduling
                               </h6>
                             </div>
                           </div>
@@ -429,12 +381,29 @@ class Landing extends React.Component {
                                 className="badge-circle mr-3"
                                 color="success"
                               >
-                                <i className="ni ni-settings-gear-65" />
+                                <i className="ni ni-html5" />
                               </Badge>
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Smart Pharmacy clinics with ABDM compliance
+                                Integrated Smart Billing
+                              </h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-satisfied" />
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0 text-white">
+                                Teleconsultation Support
                               </h6>
                             </div>
                           </div>
@@ -525,31 +494,35 @@ class Landing extends React.Component {
           <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
-                <Col lg="12">
-                  <h2 className="display-3">
-                    Why do you need healthcare Modernization ?
-                  </h2>
+                <Col lg="8">
+                  <h2 className="display-3">What is ABDM compliance ?</h2>
                   <p className="lead text-muted">
-                    The National Health Authority (NHA) is driving the Ayushman
-                    Bharat Digital Mission (ABDM) to establish a comprehensive
-                    digital health ecosystem for the nation. Despite remarkable
-                    progress in digital health records, untapped potential
-                    remains. Recognizing this, the government is offering
-                    incentives to encourage stakeholders to integrate into this
-                    transformative ecosystem. This signifies that, as a
-                    healthcare organization, you're not just transitioning to
-                    digital; you're also being financially supported for this
-                    pivotal shift. Embracing this journey is crucial, as
-                    welcoming patients with digital records becomes fundamental
-                    for your organization's seamless alignment with the evolving
-                    ecosystem.
-                    {/* <a
+                    The Ayushman Bharat Digital Mission (ABDM) from the
+                    Government of India is developing a health infrastructure
+                    and coverting your clinic to a smart clinic is simple step
+                    that empowers you to join the ABDM ecosystem and be part of
+                    the healthcare digital transformation in India.{' '}
+                    <a
                       className="font-weight-bold text-warning mt-5"
                       href="https://abdm.gov.in/"
                       onClick={(e) => e.preventDefault()}
                     >
                       Read more
-                    </a> */}
+                    </a>
+                    <iframe
+                      width="640px"
+                      height="880px"
+                      src="https://forms.office.com/r/3vBRiiZPjg?embed=true"
+                      frameborder="0"
+                      marginwidth="0"
+                      marginheight="0"
+                      allowfullscreen
+                      webkitallowfullscreen
+                      mozallowfullscreen
+                      msallowfullscreen
+                    >
+                      {' '}
+                    </iframe>
                   </p>
                 </Col>
               </Row>
@@ -561,12 +534,14 @@ class Landing extends React.Component {
               <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 className="display-3 text-white">
-                    Ready for transformation ?
+                    EARLY ADOPTION PROGRAM
                   </h2>
                   <p className="lead text-white">
-                    Your organization's transformation
-                    is not just a step; it's a powerful leap into the forefront
-                    of healthcare innovation.
+                    If you are small clinic in search of an EMR / billing
+                    platform, we are a right fit. Get in touch and we can guide
+                    you on how to setup up your smart clinic. As an early
+                    adopter you will be onboarded for 0 cost and you will be
+                    never charged for basic features built on Open Source.
                   </p>
                 </Col>
               </Row>
@@ -624,20 +599,81 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
-                  <iframe
-                    width="640px"
-                    height="880px"
-                    src="https://forms.office.com/r/3vBRiiZPjg?embed=true"
-                    frameborder="0"
-                    marginwidth="0"
-                    marginheight="0"
-                    allowfullscreen
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    msallowfullscreen
-                  >
-                    {' '}
-                  </iframe>
+                  <Card className="bg-gradient-secondary shadow">
+                    <CardBody className="p-lg-5">
+                      <h4 className="mb-1">Contact Us</h4>
+                      {/* <p className="mt-0">
+                        Your project is very important to us.
+                      </p> */}
+                      <FormGroup
+                        className={classnames('mt-5', {
+                          focused: this.state.nameFocused,
+                        })}
+                      >
+                        <InputGroup className="input-group-alternative">
+                          <InputGroupAddon addonType="prepend">
+                            <InputGroupText>
+                              <i className="ni ni-user-run" />
+                            </InputGroupText>
+                          </InputGroupAddon>
+                          <Input
+                            placeholder="Your name"
+                            type="text"
+                            onFocus={(e) =>
+                              this.setState({ nameFocused: true })
+                            }
+                            onBlur={(e) =>
+                              this.setState({ nameFocused: false })
+                            }
+                          />
+                        </InputGroup>
+                      </FormGroup>
+                      <FormGroup
+                        className={classnames({
+                          focused: this.state.emailFocused,
+                        })}
+                      >
+                        <InputGroup className="input-group-alternative">
+                          <InputGroupAddon addonType="prepend">
+                            <InputGroupText>
+                              <i className="ni ni-email-83" />
+                            </InputGroupText>
+                          </InputGroupAddon>
+                          <Input
+                            placeholder="Email address"
+                            type="email"
+                            onFocus={(e) =>
+                              this.setState({ emailFocused: true })
+                            }
+                            onBlur={(e) =>
+                              this.setState({ emailFocused: false })
+                            }
+                          />
+                        </InputGroup>
+                      </FormGroup>
+                      <FormGroup className="mb-4">
+                        <Input
+                          className="form-control-alternative"
+                          cols="80"
+                          name="name"
+                          placeholder="Type a message..."
+                          rows="4"
+                          type="textarea"
+                        />
+                      </FormGroup>
+                      <div>
+                        <Button
+                          block
+                          className="btn-round"
+                          color="default"
+                          size="lg"
+                          type="button"
+                        >
+                          Send Message
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </Card>
                 </Col>
               </Row>
             </Container>
