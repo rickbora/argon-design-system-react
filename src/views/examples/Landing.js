@@ -17,7 +17,7 @@
 */
 import React from 'react';
 // nodejs library that concatenates classes
-import classnames from 'classnames';
+// import classnames from 'classnames';
 
 // reactstrap components
 import {
@@ -624,6 +624,7 @@ class Landing extends React.Component {
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
                   <iframe
+                    title="signup"
                     width="640px"
                     height="880px"
                     src="https://forms.office.com/r/3vBRiiZPjg?embed=true"
