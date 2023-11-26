@@ -40,6 +40,22 @@ import {
 import DemoNavbar from 'components/Navbars/DemoNavbar.js';
 import CardsFooter from 'components/Footers/SimpleFooter';
 
+const leadTextStyle = {
+  fontSize: '28px',
+};
+
+const iframeContainerStyle = {
+  position: 'relative',
+  overflow: 'hidden',
+  width: '100%',
+  // paddingTop: '56.25%', // Adjust this value for the aspect ratio you want, e.g., 16:9
+};
+
+const iframeStyle = {
+  width: '100%',
+  minHeight: '100%',
+};
+
 class Landing extends React.Component {
   state = {};
   componentDidMount() {
@@ -262,21 +278,22 @@ class Landing extends React.Component {
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 className="display-3 text-white">Why choose us ?</h2>
+                  <h2 className="display-3 text-white">Why Choose Us</h2>
                   <p className="lead text-white">
                     At Amicure, we understand that navigating the complex
                     landscape of healthcare requires expertise, innovation, and
-                    a deep commitment to positive outcomes. Here's why we stand
-                    out:
+                    a deep commitment to positive outcomes.
                   </p>
                 </Col>
               </Row>
               <Row className="row-grid mt-5">
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-settings text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Tailored Solutions</h5>
+                  <center>
+                    <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                      <i className="ni ni-atom text-primary" />
+                    </div>
+                    <h5 className="text-white mt-3">Tailored Solutions</h5>
+                  </center>
                   <p className="text-white mt-3">
                     Recognizing that each healthcare organization is unique, we
                     don't believe in one-size-fits-all solutions. Our
@@ -285,10 +302,12 @@ class Landing extends React.Component {
                   </p>
                 </Col>
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-ruler-pencil text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Client Centric</h5>
+                  <center>
+                    <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                      <i className="ni ni-circle-08 text-primary" />
+                    </div>
+                    <h5 className="text-white mt-3">Client Centric</h5>
+                  </center>
                   <p className="text-white mt-3">
                     Our clients are at the heart of everything we do. We believe
                     in fostering strong, collaborative relationships to truly
@@ -297,10 +316,12 @@ class Landing extends React.Component {
                   </p>
                 </Col>
                 <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Location Edge</h5>
+                  <center>
+                    <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                      <i className="ni ni-map-big text-primary" />
+                    </div>
+                    <h5 className="text-white mt-3">Location Edge</h5>
+                  </center>
                   <p className="text-white mt-3">
                     Nestled in the heart of Assam, within the dynamic pulse of
                     Guwahati, Amicure proudly stands as your local beacon for
@@ -333,11 +354,11 @@ class Landing extends React.Component {
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
                   <p className="lead text-muted">
-                    At Amicure, we are not just a consultancy; we are your
-                    strategic partner in navigating the complexities of
-                    healthcare technology. Let us empower your organization to
-                    thrive in the digital era.{' '}
-                    <b>Together, we can build a healthier future.</b>
+                    At Amicure, we are not just a consultancy; we are{' '}
+                    <span style={leadTextStyle}>your strategic partner</span> in
+                    navigating the complexities of healthcare technology. Let us
+                    empower your organization to thrive in the digital era.{' '}
+                    Together, we can build a healthier future.
                   </p>
                 </Col>
               </Row>
@@ -380,8 +401,8 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Implempentation of customized Bahmni Enterprise
-                                solutions for small and large hospitals
+                                ABDM (Ayushman Bharat Digital Mission) compliant
+                                smart clinics using customized Bahmni Lite.
                               </h6>
                             </div>
                           </div>
@@ -398,8 +419,7 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                ABDM (Ayushman Bharat Digital Mission) compliant
-                                smart clinics using customized Bahmni Lite.
+                                Smart Pharmacy clinics with ABDM compliance
                               </h6>
                             </div>
                           </div>
@@ -434,7 +454,8 @@ class Landing extends React.Component {
                             </div>
                             <div>
                               <h6 className="mb-0 text-white">
-                                Smart Pharmacy clinics with ABDM compliance
+                                Implempentation of customized Bahmni Enterprise
+                                solutions for small and large hospitals
                               </h6>
                             </div>
                           </div>
@@ -526,30 +547,37 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="12">
-                  <h2 className="display-3">
-                    Why do you need healthcare Modernization ?
-                  </h2>
+                  <h2 className="display-3">Why Healthcare Modernization ?</h2>
                   <p className="lead text-muted">
                     The National Health Authority (NHA) is driving the Ayushman
                     Bharat Digital Mission (ABDM) to establish a comprehensive
                     digital health ecosystem for the nation. Despite remarkable
                     progress in digital health records, untapped potential
-                    remains. Recognizing this, the government is offering
-                    incentives to encourage stakeholders to integrate into this
-                    transformative ecosystem. This signifies that, as a
-                    healthcare organization, you're not just transitioning to
-                    digital; you're also being financially supported for this
-                    pivotal shift. Embracing this journey is crucial, as
-                    welcoming patients with digital records becomes fundamental
-                    for your organization's seamless alignment with the evolving
-                    ecosystem.
-                    {/* <a
+                    remains. Recognizing this, the government is offering{' '}
+                    <a
+                      className="font-weight-bold text-warning mt-5"
+                      href="https://abdm.gov.in/DHIS"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      incentives to encourage stakeholders
+                    </a>{' '}
+                    to integrate into this transformative ecosystem. This
+                    signifies that, as a healthcare organization, you're not
+                    just transitioning to digital; you're also being financially
+                    supported for this pivotal shift. Embracing this journey is
+                    crucial, as welcoming patients with digital records becomes
+                    fundamental for your organization's seamless alignment with
+                    the evolving ecosystem.
+                    <br />
+                    <a
                       className="font-weight-bold text-warning mt-5"
                       href="https://abdm.gov.in/"
-                      onClick={(e) => e.preventDefault()}
+                      rel="noreferrer"
+                      target="_blank"
                     >
                       Read more
-                    </a> */}
+                    </a>
                   </p>
                 </Col>
               </Row>
@@ -561,11 +589,14 @@ class Landing extends React.Component {
               <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 className="display-3 text-white">
-                    Ready for transformation ?
+                    Ready for Transformation
                   </h2>
                   <p className="lead text-white">
-                    Your organization's transformation is not just a step; it's
-                    a powerful leap into the forefront of healthcare innovation.
+                    <i>
+                      Your organization's transformation is not just a step;
+                      it's a powerful leap into the forefront of healthcare
+                      innovation.
+                    </i>
                   </p>
                 </Col>
               </Row>
@@ -623,21 +654,24 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
-                  <iframe
-                    title="signup"
-                    width="640px"
-                    height="880px"
-                    src="https://forms.office.com/r/3vBRiiZPjg?embed=true"
-                    frameborder="0"
-                    marginwidth="0"
-                    marginheight="0"
-                    allowfullscreen
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    msallowfullscreen
-                  >
-                    {' '}
-                  </iframe>
+                  <div style={iframeContainerStyle}>
+                    <iframe
+                      title="signup"
+                      width="640px"
+                      height="880px"
+                      src="https://forms.office.com/r/3vBRiiZPjg?embed=true"
+                      frameborder="0"
+                      marginwidth="0"
+                      marginheight="0"
+                      allowfullscreen
+                      webkitallowfullscreen
+                      mozallowfullscreen
+                      msallowfullscreen
+                      style={iframeStyle}
+                    >
+                      {' '}
+                    </iframe>
+                  </div>
                 </Col>
               </Row>
             </Container>
