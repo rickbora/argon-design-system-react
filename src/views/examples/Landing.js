@@ -253,7 +253,7 @@ class Landing extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <h3>Trusted Ally in Healtcare IT</h3>
+                    <h3>Trusted Ally in Healthcare IT</h3>
                     <p className="lead">
                       Welcome to Amicure. As your trusted ally, we stand at the
                       forefront of the intersection between healthcare and
