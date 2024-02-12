@@ -87,8 +87,8 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       {/* <h1 className="display-3 text-white"> */}
-                        {/* Amicure অসম */}
-                        {/* <span>completed with examples</span> */}
+                      {/* Amicure অসম */}
+                      {/* <span>completed with examples</span> */}
                       {/* </h1> */}
                       <img
                         alt="..."
@@ -659,7 +659,7 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
-                  <div style={iframeContainerStyle}>
+                  {/* <div style={iframeContainerStyle}>
                     <iframe
                       title="signup"
                       width="640px"
@@ -676,7 +676,12 @@ class Landing extends React.Component {
                     >
                       {' '}
                     </iframe>
-                  </div>
+                  </div> */}
+                  <img
+                    alt="..."
+                    className="img-center img-fluid"
+                    src={require('assets/img/brand/success_2.png')}
+                  />
                 </Col>
               </Row>
             </Container>
