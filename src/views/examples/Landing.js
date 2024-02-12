@@ -86,10 +86,15 @@ class Landing extends React.Component {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
-                      <h1 className="display-3 text-white">
-                        Amicure অসম
+                      {/* <h1 className="display-3 text-white"> */}
+                        {/* Amicure অসম */}
                         {/* <span>completed with examples</span> */}
-                      </h1>
+                      {/* </h1> */}
+                      <img
+                        alt="..."
+                        className="img-center img-fluid"
+                        src={require('assets/img/brand/amicure.png')}
+                      />
                       <p className="lead text-white">
                         Your Trusted Ally in Healthcare IT — Empowering
                         Modernization for a Healthier Tomorrow.
