@@ -44,17 +44,17 @@ const leadTextStyle = {
   fontSize: '28px',
 };
 
-const iframeContainerStyle = {
-  position: 'relative',
-  overflow: 'hidden',
-  width: '100%',
-  // paddingTop: '56.25%', // Adjust this value for the aspect ratio you want, e.g., 16:9
-};
+// const iframeContainerStyle = {
+//   position: 'relative',
+//   overflow: 'hidden',
+//   width: '100%',
+//   // paddingTop: '56.25%', // Adjust this value for the aspect ratio you want, e.g., 16:9
+// };
 
-const iframeStyle = {
-  width: '100%',
-  minHeight: '100%',
-};
+// const iframeStyle = {
+//   width: '100%',
+//   minHeight: '100%',
+// };
 
 class Landing extends React.Component {
   state = {};
