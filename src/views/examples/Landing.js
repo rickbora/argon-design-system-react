@@ -93,7 +93,7 @@ class Landing extends React.Component {
                       <img
                         alt="..."
                         className="img-center img-fluid"
-                        src={require('assets/img/brand/amicure.png')}
+                        src={require('assets/img/brand/amicure_transparent.png')}
                       />
                       <p className="lead text-white">
                         Your Trusted Ally in Healthcare IT — Empowering
